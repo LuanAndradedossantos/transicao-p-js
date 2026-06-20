@@ -32,8 +32,20 @@ input {
     height: 30px;
     width: 80px;
     border-radius: 8px;
+    
 }
 
 input::placeholder {
     text-align: center;
 }
+
+fieldset {
+    width: 300px;
+    margin-left: 450px;
+    
+    border-radius: 8px;
+    border-color: black;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
