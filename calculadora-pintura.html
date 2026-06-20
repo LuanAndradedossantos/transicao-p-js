@@ -18,7 +18,9 @@
 
     <fieldset>
     
-        <legend>Selecione a marca da tinta</legend>
+        <legend>
+            <h3>Selecione a marca da tinta</h3>
+        </legend>
     <!--para alternar as marcações das bolinhas do input tipo radio é necessario que o atributo name seja o mesmo em todas as opçoes de input as quias queremos que seja referentes a mesma questão-->
         <input type="radio" name="marca1" id="marca1" value="marca1">
         <label for="marca1">Suvinil</label><br>
@@ -27,6 +29,8 @@
         <label for="marca1">Coral</label>
     </fieldset>
 
+
+    <h2>Insira as dimensões que serão pintadas</h2>
     <input type="number" name="larg" id="larg" placeholder="Largura">
     <input type="number" name="alt" id="alt" placeholder="Altura">
     <button onclick="opera()">Calcular</button>
