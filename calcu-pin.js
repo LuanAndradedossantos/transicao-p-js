@@ -19,7 +19,11 @@ function opera()
         tintafinal = tinta;
     } else {
         tintafinal = tinta1;}
-    /*aqui o innerhtml adiciona um texto com o resultado do calculo que é feito quando a função é disparada atravez do click do butão*/
-    window.document.getElementById("result").innerHTML = `Sua parede tem a dimensão de ${larg} x ${alt} e sua area é de ${area}m&sup2;, voce precisará de ${tintafinal.toFixed(3)}L de tinta para pintar essa parede com apenas uma demão de tinta se a parede ja estiver pintada ou conter massa corrida,`
+    /*aqui o innerhtml adiciona um texto com o resultado do calculo que é feito quando a função é disparada atravez do click do butão.
+    O .toFixed() serve para delimitar a quantidade de numeros que aparecem nos resultados colidos que ficam nas variaveis.
+    
+    antes de imprimir texto atravez do innerhtml é necessario resgatar a tag atravez do get elementbyid ou selctorquire para poder manipular com inner html*/
+    window.document.getElementById("result").innerHTML = `Sua parede tem a dimensão de ${larg} x ${alt} e sua area é de ${area}m&sup2;, voce   
+    precisará de ${tintafinal.toFixed(3)}L de tinta para pintar essa parede com apenas uma demão de tinta se a parede ja estiver pintada ou conter massa corrida,`
 
 }
