@@ -19,11 +19,12 @@ header {
 }
 
 body {
+    
     text-align: center;
     background-image: linear-gradient(45deg, red,rgba(226, 204, 5, 0.521), blue);
     background-repeat: no-repeat;
     height: 800px;
-    margin: 0 auto;
+    margin: 0;
 
 }
 
@@ -40,12 +41,15 @@ input::placeholder {
 }
 
 fieldset {
-    width: 300px;
-    margin-left: 450px;
-    
+   
+    width: 100%;
+    max-width: 300px;
     border-radius: 8px;
     border-color: black;
     text-align: left;
     margin-bottom: 30px;
+    margin: 50px auto 30px auto; /* O 'auto' nas laterais centraliza o bloco na horizontal */
+    box-sizing: border-box;       /* Garante que o tamanho não passe de 300px em telas pequenas */
+    min-width: 0;
 }
 
