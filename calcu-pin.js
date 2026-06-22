@@ -17,6 +17,7 @@ function opera()
     let area = larg * alt;
     let tinta = area / 10;
     let tinta1 = area / 6.666;
+    /*a variavel a baixo dobra  a quantidade de tinta*/
     let tinta2 = area / 5;
     /*a variavel abaixo foi criada e deixada vazia para receber a variavel tinta ou tinta 1 dependendo da escolha no input radio. ela será usada nas condiçoes if e else*/
     let tintafinal = 0;
