@@ -18,20 +18,44 @@ function opera()
     let tinta = area / 10;
     let tinta1 = area / 6.666;
     /*a variavel a baixo dobra  a quantidade de tinta*/
-    let tinta2 = area / 5;
+    //let tinta2 = area / 5;
     /*a variavel abaixo foi criada e deixada vazia para receber a variavel tinta ou tinta 1 dependendo da escolha no input radio. ela será usada nas condiçoes if e else*/
     let tintafinal = 0;
     let res = document.querySelector('#result');
     let textodemao = "";
 
 /*Para criar uma condição if/else baseada em um input do tipo radio, é preciso marcar o elemento usando a propriedade  '.checked'*/
-    if (suvinil.checked && demao2.checked) {
-        tintafinal = tinta2;
-        textodemao = "duas(2) demãos de tinta se a parede já estiver pintada ou conter massa corrida";
+    if (suvinil.checked && demao1.checked) {
+        tintafinal = tinta;
+        textodemao = "apenas uma demão de tinta se a parede já estiver pintada ou conter massa corrida";
+    } else if(suvinil.checked && demao2.checked) {
+        tintafinal = tinta * 2;
+        textodemao = "duas(2) demãos de tinta se a parede já estiver pintada ou conter massa corrida";}
+        else if (suvinil.checked && demao3.checked) {
+            tintafinal = tinta * 3;
+            textodemao = "três(3) demãos de tinta se a parede já estiver pintada ou conter massa corrida";}
+            else if (suvinil.checked && demao4.checked) {
+            tintafinal = tinta * 4;
+            textodemao = "quatro(4) demãos de tinta se a parede já estiver pintada ou conter massa corrida";}
+            else if (suvinil.checked && demao5.checked) {
+            tintafinal = tinta * 5;
+            textodemao = "cinco(5) demãos de tinta se a parede já estiver pintada ou conter massa corrida";}
 
-    } else {
+    if (coral.checked && demao1.checked) {
         tintafinal = tinta1;
-        textodemao = "apenas uma demão de tinta se a parede já estiver pintada ou conter massa corrida";}
+        textodemao = "apenas uma demão de tinta se a parede já estiver pintada ou conter massa corrida";
+    } else if(coral.checked && demao2.checked) {
+        tintafinal = tinta1 * 2;
+        textodemao = "duas(2) demãos de tinta se a parede já estiver pintada ou conter massa corrida";}
+        else if (coral.checked && demao3.checked) {
+            tintafinal = tinta1 * 3;
+            textodemao = "três(3) demãos de tinta se a parede já estiver pintada ou conter massa corrida";}
+            else if (coral.checked && demao4.checked) {
+            tintafinal = tinta1 * 4;
+            textodemao = "quatro(4) demãos de tinta se a parede já estiver pintada ou conter massa corrida";}
+            else if (coral.checked && demao5.checked) {
+            tintafinal = tinta1 * 5;
+            textodemao = "cinco(5) demãos de tinta se a parede já estiver pintada ou conter massa corrida";}
     /*aqui o innerhtml adiciona um texto com o resultado do calculo que é feito quando a função é disparada atravez do click do butão.
     O .toFixed() serve para delimitar a quantidade de numeros que aparecem nos resultados colidos que ficam nas variaveis.
     
